@@ -1,0 +1,40 @@
+﻿1 Install nodes.js
+Verify nodes.js install
+Node-v
+(check that install install directory has been added to path)
+
+
+2 Install Cypress.io https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install
+Navigate to your project location (e.g. c:\temp\cypress)
+npm install cypress --save-dev
+
+
+(optional - this allows you to launch more easily)
+Add the following to packages.json in your project directory
+"scripts": {
+        "cypress:open": "cypress open"
+          }
+(see below for example)
+
+
+Launch Cypress
+C:\temp\cypress\nodes_modules\.bin\cypress open
+
+
+Sample package.json after edit
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "scripts": {
+  "cypress:open": "cypress open"
+  },
+  "dependencies": {
+    "@cypress/listr-verbose-renderer": {
+……..
+
+
+Notes:
+All supported browsers on system will automatically be detected. Choose from top right corner.
+See 
+https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#Step-2-Query-for-an-element
+https://courses.cs.northwestern.edu/394/cypress-setup.php for more details.
