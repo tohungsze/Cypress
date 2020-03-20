@@ -1,6 +1,6 @@
 // techniques demonstrated:
 // handling drop down & popup
-//
+// force: true, wait and contains vs get
 describe ('My test for phptravls', () => {
 
   it ('launches', () => {
